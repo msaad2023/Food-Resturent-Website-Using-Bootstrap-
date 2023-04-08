@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Resturent</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Fontawoesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg nav-wrapper">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand mb-0">
+                <img src="./img/logo.png" alt="logo" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navs"
+                aria-controls="navs" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navs">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Bookings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Reviews</a>
+                    </li>
+                </ul>
+                <button class="main-btn ms-auto" id="nav-btn">+91-272-98252</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container-fluid px-0 top-home">
+            <div class="container">
+                <div class="col-lg-5 col-md-6">
+                    <h1>Good Food Choices are Good Investments.</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem molestiae sequi non
+                        nostrum dicta nemo eveniet odio voluptatem corporis praesentium.</p>
+                </div>
+                <div class="pt-4">
+                    <button class="main-btn">Order Now <i class="fa-solid fa-bag-shopping ms-3"></i></button>
+                    <button class="white-btn ms-lg-4">Book Table <i class="fa-solid fa-book-bookmark ms-3"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="counter">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-3">
+                        <h1>
+                            <span id="count1"></span>+
+                        </h1>
+                        <p>SERVINGS</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-3">
+                        <h1>
+                            <span id="count2"></span>+
+                        </h1>
+                        <p>CUSTOMERS</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-3">
+                        <h1>
+                            <span id="count3"></span>+
+                        </h1>
+                        <p>ORDERS</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-3">
+                        <h1>
+                            <span id="count4"></span>+
+                        </h1>
+                        <p>DISHES</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-wrapper wrapper">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-12 mb-lg-0 mb-4">
+                        <div class="card border-0">
+                            <img src="./img/img-1.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 mb-lg-0 mb-4 text-sec">
+                        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, nostrum.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim accusantium magnam nulla esse.
+                            Explicabo nulla qui quas aperiam cupiditate nobis.</p>
+                        <button class="main-btn">More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="food-wrapper wrapper">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-12 mb-lg-0 mb-4 text-sec">
+                        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, nostrum.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim accusantium magnam nulla esse.
+                            Explicabo nulla qui quas aperiam cupiditate nobis.</p>
+                        <ul class="list-unstyled">
+                            <li> <i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet.</li>
+                            <li> <i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet.</li>
+                            <li> <i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet.</li>
+                            <li> <i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                        <button class="main-btn">More</button>
+                    </div>
+                    <div class="col-lg-7 col-md-12 mb-lg-0 mb-4">
+                        <div class="card border-0">
+                            <img src="./img/img-2.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="story">
+            <div class="container text-center  w-75 mx-auto">
+                <h2>When a Man's Stomach is full, It makes no difference Whether he is poor or rich!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis fugit velit perferendis alias enim
+                    temporibus.</p>
+                <button class="main-btn">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="explore" class="wrapper">
+        <div class="container wrapper">
+            <div class="row justify-content-center">
+                <h2>Explore Our Food</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, tenetur eius officia mollitia aut
+                    ipsum nostrum sunt ducimus. Dolorum, voluptatibus!</p>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-5 mb-md-4 mb-lg-0 mb-4">
+                    <div class="card">
+                        <img src="./img/img-3.jpg" alt="">
+                        <div class="pt-3">
+                            <h4>Rainbow Vegetable Sandwhich</h4>
+                            <p>Time 15 - 20 Mins | 1 Serve</p>
+                            <span>$10.20 <del>$12.40</del></span>
+                            <button class="mt-4 main-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 mb-md-4 mb-lg-0 mb-4">
+                    <div class="card">
+                        <img src="./img/img-4.jpg" alt="">
+                        <div class="pt-3">
+                            <h4>Rainbow Vegetable Sandwhich</h4>
+                            <p>Time 15 - 20 Mins | 1 Serve</p>
+                            <span>$10.20 <del>$12.40</del></span>
+                            <button class="mt-4 main-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 mb-md-4 mb-lg-0 mb-4">
+                    <div class="card">
+                        <img src="./img/img-5.jpg" alt="">
+                        <div class="pt-3">
+                            <h4>Rainbow Vegetable Sandwhich</h4>
+                            <p>Time 15 - 20 Mins | 1 Serve</p>
+                            <span>$10.20 <del>$12.40</del></span>
+                            <button class="mt-4 main-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testemonials">
+        <div class="wrapper-p">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <h2>Texstemonials</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="container">
+
+
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12 col-lg-10">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner d-flex">
+                                    <div class="carousel-item active w-75 mx-auto text-center">
+                                        <img src="./img/review-1.jpg" class="d-block mx-auto " alt="...">
+                                        <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius illum libero
+                                                deserunt quibusdam molestiae suscipit consequuntur perspiciatis laborum
+                                                consequatur magni?</q>
+                                            <br>
+                                        <h3>John Doe</h3>
+                                        </p>
+                                    </div>
+                                    <div class="carousel-item mx-auto w-75 text-center">
+                                        <img src="./img/review-2.jpg" class="d-block mx-auto" alt="...">
+                                        <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius illum libero
+                                                deserunt quibusdam molestiae suscipit consequuntur perspiciatis laborum
+                                                consequatur magni?</q>
+                                            <br>
+                                        <h3>John Doe</h3>
+                                        </p>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faqs" class="wrapper">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 mb-4 text-center">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <h3>~ Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit soluta quasi alias deserunt?
+                        Maxime sed nesciunt, eveniet esse ipsa temporibus fuga nulla! Laborum, ducimus ex? Voluptatem
+                        eveniet in ab hic!</p>
+                </div>
+                <div class="col-lg-5">
+                    <h3>~ Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit soluta quasi alias deserunt?
+                        Maxime sed nesciunt, eveniet esse ipsa temporibus fuga nulla! Laborum, ducimus ex? Voluptatem
+                        eveniet in ab hic!</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <h3>~ Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit soluta quasi alias deserunt?
+                        Maxime sed nesciunt, eveniet esse ipsa temporibus fuga nulla! Laborum, ducimus ex? Voluptatem
+                        eveniet in ab hic!</p>
+                </div>
+                <div class="col-lg-5">
+                    <h3>~ Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit soluta quasi alias deserunt?
+                        Maxime sed nesciunt, eveniet esse ipsa temporibus fuga nulla! Laborum, ducimus ex? Voluptatem
+                        eveniet in ab hic!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="paralex">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-10">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                </div>
+                <div class="col-md-2 text-center mt-sm-3">
+                    <button class="main-btn">Contact</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="wrapper">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <h3 class="display-4">Hurry Up, Subscribe Our News Letter & Get Up to 25% Off</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-5 text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-sm-0 mt-lg-4">
+                <div class="col-lg-7 col-md-8 text-center">
+                    <div class="row justify-content-center">
+                            <div class="col-lg-9 col-sm-12">
+                                <input type="text" id="inp" class="form-control-lg w-100">
+                            </div>
+                            <div class="col-lg-3 col-sm-12 mt-3 mt-lg-0">
+                                <button class="main-btn">Subscribe</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <ul class="list-unstyled d-flex justify-content-center">
+                            <li class="d-inline-block text-center px-2 text-light"><a href="#" class="nav-link">Home</a></li>
+                            <li class="d-inline-block text-center px-2 text-light"><a href="#" class="nav-link" >Contact</a></li>
+                            <li class="d-inline-block text-center px-2 text-light"><a href="#" class="nav-link">Dishes</a></li>
+                            <li class="d-inline-block text-center px-2 text-light"><a href="#" class="nav-link">Bokings</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <ul class="list-unstyled d-flex justify-content-center">
+                            <li class="d-inline-block text-center px-2 text-light"><a href="#" class="nav-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a></li>
+                            <li class="d-inline-block text-center px-2 text-light"><a href="#" class="nav-link" >
+                                <i class="fab fa-youtube"></i>
+                            </a></li>
+                            <li class="d-inline-block text-center px-2 text-light"><a href="#" class="nav-link">
+                                <i class="fab fa-twitter"></i>
+                            </a></li>
+                            <li class="d-inline-block text-center px-2 text-light"><a href="#" class="nav-link">
+                                <i class="fab fa-instagram"></i>
+                            </a></li>
+                            <li class="d-inline-block text-center px-2 text-light"><a href="#" class="nav-link">
+                                <i class="fab fa-github"></i>
+                            </a></li>
+                            <li class="d-inline-block text-center px-2 text-light"><a href="#" class="nav-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 text-center">
+                       <p class="text-light">Copyright &copy; 2023 All Rights Are Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script src="./js/script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
